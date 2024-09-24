@@ -1,0 +1,25 @@
+{
+  "title": {
+    "teams": "Work groups",
+    "users": "Create work groups"
+  },
+  "create": {
+    "id": "ID",
+    "name": "Name",
+    "age": "Age",
+    "address": "Address",
+    "team": "Team",
+    "role": "Role",
+    "tasks": "Tasks",
+    "progress": "Progress (%)",
+    "image": "Image"
+  },
+  "user": {
+    "image": "Image",
+    "id": "ID",
+    "name": "Name",
+    "address": "Address",
+    "role": "Role",
+    "completed": "Progress (%)"
+  }
+}

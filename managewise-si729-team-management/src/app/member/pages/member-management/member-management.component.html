@@ -1,0 +1,69 @@
+<!-- Student catalogue -->
+<div class="table-wrapper">
+  <h3>{{ 'title.teams' | translate }}</h3>
+
+
+
+
+  <!--Add/Edit Form-->
+  <app-member-create-and-edit (editCanceled)="onCancelEdit()"
+                               (userAdded)="onStudentAdded($event)"
+                               (userUpdated)="onStudentUpdated($event)"
+                               [editMode] = "isEditMode"
+                              [teams]="teamsData"
+                               [user]="userData"/>
+  <!-- Data Table -->
+  <table mat-table [dataSource]="dataSource" class="mat-elevation-z8"
+         matSort matSortActive="name" matSortDirection="asc">
+
+    <ng-container matColumnDef="image">
+      <th *matHeaderCellDef mat-header-cell mat-sort-header> {{ 'user.image' | translate }} </th>
+      <td *matCellDef="let element" mat-cell><img width="60px" height="60px" src="{{element.image}}" alt="">   </td>
+    </ng-container>
+
+    <ng-container matColumnDef="id">
+      <th *matHeaderCellDef mat-header-cell mat-sort-header> {{ 'user.id' | translate }} </th>
+      <td *matCellDef="let element" mat-cell>{{ element.id }}</td>
+    </ng-container>
+
+    <ng-container matColumnDef="name">
+      <th *matHeaderCellDef mat-header-cell mat-sort-header>{{ 'user.name' | translate }}</th>
+      <td *matCellDef="let element" mat-cell>{{ element.name }}</td>
+    </ng-container>
+
+    <ng-container matColumnDef="role">
+      <th *matHeaderCellDef mat-header-cell mat-sort-header>{{ 'user.role' | translate }}</th>
+      <td *matCellDef="let element" mat-cell>{{ element.role }}</td>
+    </ng-container>
+
+    <ng-container matColumnDef="age">
+      <th *matHeaderCellDef mat-header-cell mat-sort-header>{{ 'user.age' | translate }}</th>
+      <td *matCellDef="let element" mat-cell>{{ element.age }}</td>
+    </ng-container>
+
+    <ng-container matColumnDef="address">
+      <th *matHeaderCellDef mat-header-cell mat-sort-header>{{ 'user.address' | translate }}</th>
+      <td *matCellDef="let element" mat-cell>{{ element.address }}</td>
+    </ng-container>
+
+    <ng-container matColumnDef="progress">
+      <th *matHeaderCellDef mat-header-cell mat-sort-header>{{ 'user.completed' | translate }}</th>
+      <td *matCellDef="let element" mat-cell>
+        <mat-progress-spinner [value]="element.completed" diameter="20" mode="determinate"></mat-progress-spinner>
+      </td>
+    </ng-container>
+
+    <ng-container matColumnDef="actions">
+      <th *matHeaderCellDef mat-header-cell> {{ 'user.actions' | translate }}</th>
+      <td *matCellDef="let element" mat-cell>
+        <a (click)="onEditItem(element)" href="javascript:void(0)"><mat-icon>edit</mat-icon></a>
+        <a (click)="onDeleteItem(element)" href="javascript:void(0)"><mat-icon>delete</mat-icon></a>
+      </td>
+    </ng-container>
+
+    <tr *matHeaderRowDef="displayedColumns" mat-header-row></tr>
+    <tr *matRowDef="let row; columns:displayedColumns" [ngClass]="{'editable-row': userData.id === row.id }" mat-row></tr>
+  </table>
+  <!-- Paginator child component-->
+  <mat-paginator [pageSizeOptions]="[5, 10, 15]" [pageSize]="5" showFirstLastButtons></mat-paginator>
+</div>

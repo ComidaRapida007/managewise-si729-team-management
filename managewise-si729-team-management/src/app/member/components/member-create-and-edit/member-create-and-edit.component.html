@@ -1,0 +1,50 @@
+<!-- Create and Edit Form -->
+<h4>{{ 'title.users' | translate }}</h4>
+<div class="form-section">
+
+  <form (submit)="onSubmit()" #studentForm='ngForm' class="form-row">
+    <mat-form-field>
+      <input matInput placeholder="{{ 'create.name' | translate }}" name="name" required [(ngModel)]="user.name">
+    </mat-form-field>
+
+    <mat-form-field>
+      <input matInput placeholder="{{ 'create.address' | translate }}" name="address" required [(ngModel)]="user.address">
+    </mat-form-field>
+
+
+    <mat-form-field>
+      <mat-select placeholder="{{ 'create.team' | translate }}" name="teamId" required [(ngModel)]="user.teamId" >
+        @for(team of teams; track team.name) {
+          <mat-option [value]="team.id">
+            {{ team.name }}
+          </mat-option>
+        }
+      </mat-select>
+    </mat-form-field>
+
+    <mat-form-field>
+      <input matInput placeholder="{{ 'create.role' | translate }}" name="role" required [(ngModel)]="user.role">
+    </mat-form-field>
+
+
+    <mat-form-field id="age-form-field">
+      <input matInput type="number" placeholder="{{ 'create.progress' | translate }}" name="completed" required [(ngModel)]="user.completed" min="0" max="100">
+    </mat-form-field>
+
+    <mat-form-field>
+      <input matInput placeholder="{{ 'create.image' | translate }}" name="image" required [(ngModel)]="user.image">
+    </mat-form-field>
+
+
+    <ng-container>
+      @if (editMode === true) {
+        <button mat-raised-button color="primary">Update</button>
+        <button mat-raised-button color="warn" (click)="onCancel()">Cancel</button>
+      }
+      @else {
+        <button mat-raised-button color="primary">Add</button>
+      }
+    </ng-container>
+  </form>
+
+</div>

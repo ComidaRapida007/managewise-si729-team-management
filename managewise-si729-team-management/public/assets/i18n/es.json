@@ -1,0 +1,26 @@
+
+{
+  "title": {
+    "teams": "Grupos de trabajo",
+    "users": "Crear grupos de trabajo"
+  },
+  "create": {
+    "id": "ID",
+    "name": "Nombre",
+    "age": "Edad",
+    "address": "Dirección",
+    "team": "Grupo",
+    "role": "Rol",
+    "tasks": "Tareas",
+    "progress": "Progreso (%)",
+    "image": "Imagen"
+  },
+  "user": {
+    "image": "Imagen",
+    "id": "ID",
+    "name": "Nombre",
+    "address": "Dirección",
+    "role": "Rol",
+    "completed": "Progreso (%)"
+  }
+}
