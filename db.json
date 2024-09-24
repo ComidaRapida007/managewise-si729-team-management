@@ -1,0 +1,193 @@
+{
+  "teams": [
+    {
+      "id": 1,
+      "name": "Design Team"
+    },
+    {
+      "id": 2,
+      "name": "Frontend Development Team"
+    },
+    {
+      "id": 3,
+      "name": "Backend Development Team"
+    },
+    {
+      "id": 4,
+      "name": "SEO and Digital Marketing Team"
+    },
+    {
+      "id": 5,
+      "name": "Testing Team (QA)"
+    }
+  ],
+  "users": [
+    {
+      "id": 1,
+      "name": "John Doe",
+      "age": 26,
+      "address": "123 Elm Street, Springfield, IL 62704",
+      "phone": "936548745",
+      "teamId": 1,
+      "role": "Leader",
+      "tasks": 12,
+      "completed": 50,
+      "image": "https://image.cdn2.seaart.ai/2023-09-13/17051285305963525/01f455e0dec26568b97f73a9a35fa911eb495aa4_high.webp"
+    },
+    {
+      "id": 2,
+      "name": "Jason Bourne",
+      "age": 34,
+      "address": "456 Maple Avenue, Seattle, WA 98101",
+      "phone": "936548745",
+      "teamId": 2,
+      "role": "Leader",
+      "completed": 80,
+      "image": "https://previews.123rf.com/images/rustock/rustock2007/rustock200700561/152510230-cierra-el-retrato-de-un-hombre-de-30-a-34-a%C3%B1os-con-una-camisa-blanca-y-una-chaqueta-negra-sobre-un.jpg"
+    },
+    {
+      "id": 3,
+      "name": "William Norton",
+      "age": 45,
+      "address": "101 Pine Lane, Austin, TX 73301",
+      "phone": "936548745",
+      "teamId": 3,
+      "role": "Leader",
+
+      "completed": 40,
+      "image": "https://media.istockphoto.com/id/481193816/es/foto/maduro-hombre-afroamericano.jpg?s=612x612&w=0&k=20&c=terL2oL3n8I4nPLC24vjzkfPc5qE9xCRnSHvoCCiFLo="
+    },
+    {
+      "id": 4,
+      "name": "Carlos Gomez",
+      "age": 30,
+      "address": "789 Oak Drive, Denver, CO 80202",
+      "phone": "936548745",
+      "teamId": 4,
+      "role": "Leader",
+      "completed": 90,
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNEsycJhw6v-B8DT59DLoHlbC5oK5YZEju_Q&s"
+    },
+    {
+      "id": 5,
+      "name": "Juanita Flores",
+      "age": 52,
+      "address": "Jr. Del Mar",
+      "phone": "936548745",
+      "teamId": 5,
+      "role": "Leader",
+      "completed": 30,
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5jcXO4CCNkx2iWt1aMsl_wnDxYeyB9mGIdw&s"
+    },
+    {
+      "id": 6,
+      "name": "Laura Rodriguez",
+      "age": 26,
+      "address": "303 Cedar Boulevard, Portland, OR 97205",
+      "phone": "936548745",
+      "teamId": 1,
+      "role": "Developer",
+      "completed": 80,
+      "image": "https://img.europapress.es/fotoweb/fotonoticia_20180430121653-1804417439_600.jpg"
+    },
+    {
+      "id": 7,
+      "name": "Estefano Perez",
+      "age": 38,
+      "address": "404 Walnut Street, Chicago, IL 60601",
+      "phone": "936548745",
+      "teamId": 2,
+      "role": "Designer UX/UI",
+      "completed": 50,
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPXlP93iCR_R2k_LRye2sc-9mNNXXUxLzO1A&s"
+    },
+    {
+      "id": 8,
+      "name": "Andres Diaz",
+      "age": 48,
+      "address": "505 Cherry Way, Los Angeles, CA 90001",
+      "phone": "936548745",
+      "teamId": 3,
+      "role": "Tester",
+      "completed": 100,
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTo6cF-btZcf-BIJTlBXor2Lx3ZSbuw7uvoQ&s"
+    },
+    {
+      "id": 9,
+      "name": "Paula Silva",
+      "age": 29,
+      "address": "606 Spruce Court, Miami, FL 33101",
+      "phone": "936548745",
+      "teamId": 4,
+      "role": "Business analyst",
+      "completed": 20,
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTo6cF-btZcf-BIJTlBXor2Lx3ZSbuw7uvoQ&s"
+    },
+    {
+      "id": 10,
+      "name": "Luis Morales",
+      "age": 56,
+      "address": "707 Ash Circle, Boston, MA 02101",
+      "phone": "936548745",
+      "teamId": 5,
+      "role": "Developer",
+      "completed": 90,
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/Luis_Casta%C3%B1eda_Lossio_2.jpg/640px-Luis_Casta%C3%B1eda_Lossio_2.jpg"
+    },
+    {
+      "id": 11,
+      "name": "Valeria Castro",
+      "age": 31,
+      "address": "808 Willow Terrace, Nashville, TN 37201",
+      "phone": "936548745",
+      "teamId": 4,
+      "role": "Designer UX/UI",
+      "completed": 20,
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/Luis_Casta%C3%B1eda_Lossio_2.jpg/640px-Luis_Casta%C3%B1eda_Lossio_2.jpg"
+    },
+    {
+      "id": 12,
+      "name": "Nicolas Rios",
+      "age": 54,
+      "address": "909 Fir Place, New York, NY 10001",
+      "phone": "936548745",
+      "teamId": 1,
+      "role": "Tester",
+      "completed": 15,
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/Luis_Casta%C3%B1eda_Lossio_2.jpg/640px-Luis_Casta%C3%B1eda_Lossio_2.jpg"
+    },
+    {
+      "id": 13,
+      "name": "Alejandro Jimenez",
+      "age": 33,
+      "address": "1001 Palm Avenue, San Francisco, CA 94101",
+      "phone": "936548745",
+      "teamId": 2,
+      "role": "Business analyst",
+      "completed": 50,
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/Luis_Casta%C3%B1eda_Lossio_2.jpg/640px-Luis_Casta%C3%B1eda_Lossio_2.jpg"
+    },
+    {
+      "id": 14,
+      "name": "Samuel Vargas",
+      "age": 47,
+      "address": "1112 Sycamore Drive, Dallas, TX 75201",
+      "phone": "936548745",
+      "teamId": 30,
+      "role": "Developer",
+      "completed": 4,
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/Luis_Casta%C3%B1eda_Lossio_2.jpg/640px-Luis_Casta%C3%B1eda_Lossio_2.jpg"
+    },
+    {
+      "id": 15,
+      "name": "Martin Romero",
+      "age": 41,
+      "address": "1314 Chestnut Street, Philadelphia, PA 19101",
+      "phone": "936548745",
+      "teamId": 5,
+      "role": "Designer UX/UI",
+      "completed": 77,
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/Luis_Casta%C3%B1eda_Lossio_2.jpg/640px-Luis_Casta%C3%B1eda_Lossio_2.jpg"
+    }
+  ]
+}
